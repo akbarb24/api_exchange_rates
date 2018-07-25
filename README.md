@@ -17,7 +17,7 @@ To add exchange currency
 
 ----------------
 
-### Request
+### Request Example
 
 > 
 > **Header**
@@ -35,9 +35,6 @@ To add exchange currency
 > }
 > ```
 > 
-
-
-
 > 
 
 ----------------
@@ -45,14 +42,14 @@ To add exchange currency
 ## DELETE Exchange Currency
 
 ```
-DELETE http://localhost:5000/currencies?from=IDR&to=USD
+DELETE http://localhost:5000/currencies?from=FROM_PARAM&to=TO_PARAM
 ```
 
 To remove exchange currency with 2 input parameters 
-
+FROM_PARAM and TO_PARAM are an `input_field`
 ----------------
 
-### Request
+### Request Example
 
 > 
 > **Query**
@@ -62,9 +59,6 @@ To remove exchange currency with 2 input parameters
 > |from|IDR||
 > |to|USD||
 > 
-
-
-
 > 
 
 ----------------
@@ -80,7 +74,7 @@ To input daily exchange rate data
 
 ----------------
 
-### Request
+### Request Example
 
 > 
 > **Header**
@@ -100,9 +94,6 @@ To input daily exchange rate data
 > }
 > ```
 > 
-
-
-
 > 
 
 ----------------
@@ -110,7 +101,7 @@ To input daily exchange rate data
 ## GET All Exchange Rates By Date
 
 ```
-GET http://localhost:5000/rates?date=2018-07-24
+GET http://localhost:5000/rates?date=DATE
 ```
 
 To get a list of exchange rates to be tracked
@@ -118,11 +109,13 @@ To get a list of exchange rates to be tracked
 Average here means the average of exchange rate for the last 7 days, including date selected. For example, last 7 days in the example will
 calculate the rate average from 26 Jun 2018 to 2 Jul 2018.
 
+DATE is an `input_field`
+
 
 
 ----------------
 
-### Request
+### Request Example
 
 > 
 > **Query**
@@ -131,13 +124,12 @@ calculate the rate average from 26 Jun 2018 to 2 Jul 2018.
 > |---|---|---|
 > |date|2018-07-24||
 > 
-
-
-
 > 
 
 ----------------
+## Database Structure
 
+![alt text](https://raw.githubusercontent.com/akbarb24/api_exchange_rates/master/doc/database_structure.png)
 ----------------
 
 Built with [Postdown][PyPI].
