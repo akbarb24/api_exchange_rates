@@ -36,7 +36,7 @@ To add exchange currency
 > ```
 > 
 
-### Examples:
+
 
 > 
 
@@ -63,7 +63,7 @@ To remove exchange currency with 2 input parameters
 > |to|USD||
 > 
 
-### Examples:
+
 
 > 
 
@@ -101,7 +101,7 @@ To input daily exchange rate data
 > ```
 > 
 
-### Examples:
+
 
 > 
 
@@ -132,7 +132,7 @@ calculate the rate average from 26 Jun 2018 to 2 Jul 2018.
 > |date|2018-07-24||
 > 
 
-### Examples:
+
 
 > 
 
