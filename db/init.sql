@@ -1,4 +1,5 @@
 CREATE DATABASE exchange_db;
+USE exchange_db
 
 CREATE TABLE exchange_currencies
 (
