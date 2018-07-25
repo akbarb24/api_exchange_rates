@@ -131,7 +131,7 @@ DATE is an `input_field`
 
 ![alt text](https://raw.githubusercontent.com/akbarb24/api_exchange_rates/master/doc/database_structure.png)
 
-> `exchange_currency` table to store a couple of Foreign Currency that will be compared. `from_currency`column stores a From > Currency data to compare. `to_currency` column stores a To Currency data to compare.
+> `exchange_currency` table to store a couple of Foreign Currency that will be compared. `from_currency`column stores a From Currency data to compare. `to_currency` column stores a To Currency data to compare.
 >
 > `exchange_rates` table to store a rates value of Foreign Exchange Currency daily. `currency_id` column stores a foreign key  from `exchange_currency`. `date` column stores a Foreign Exchange Currency date information. `rates` column stores a rates > value of Foreign Exchange Currency.
 ----------------
